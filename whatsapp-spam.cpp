@@ -8,7 +8,7 @@ void send_msg(const std::string& str){
     }
     command+=std::string(" Return");
     system(command.c_str());
-    usleep(450000);
+    usleep(450000); // delay between each message
 }
 
 int main(){
