@@ -95,15 +95,18 @@ function initGame(){
     let h=$('#vid').videoHeight;
     let ar=w/h;
     h=innerHeight;
-    if(w>=innerWidth && h>=innerHeight){
     w=ar*innerHeight;
+    if(w>=innerWidth && h>=innerHeight){
         $('#vid').style.height=h+"px";
         $('#vid').style.width=w+"px";
-        
+        $('#vid').style.transform="translate(-"+((w-innerWidth)/2)+"px,0px)";
     }else{
         ar=h/w;
-        $('#vid').style.width=(innerWidth)+"px";
-        $('#vid').style.height=ar*(innerWidth)+"px";
+        w=innerWidth;
+        h=ar*w;
+        $('#vid').style.transform="translate(0px,-"+((h-innerHeight)/2)+"px)";
+        $('#vid').style.width=w+"px";
+        $('#vid').style.height=h+"px";
     }
     
 }
@@ -123,12 +126,12 @@ function skipIntro(){
     if(w>=innerWidth && h>=innerHeight){
         $('#boo').style.height=h+"px";
         $('#boo').style.width=w+"px";
-        $('#boo').style.transform="translate("+((w-innerWidth)/2)+",0px)";
+        $('#boo').style.transform="translate(-"+((w-innerWidth)/2)+"px,0px)";
     }else{
         ar=h/w;
         w=innerWidth;
         h=ar*w;
-        $('#boo').style.transform="translate(0px,"+((h-innerHeight)/2)+")";
+        $('#boo').style.transform="translate(0px,-"+((h-innerHeight)/2)+"px)";
         $('#boo').style.width=w+"px";
         $('#boo').style.height=h+"px";
     }
