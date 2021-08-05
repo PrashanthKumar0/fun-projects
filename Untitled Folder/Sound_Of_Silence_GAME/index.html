@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+    <div id="loader">
+        <div id="load" style='margin:auto'></div>
+        <div id="load-text">
+            LOADING...
+        </div>
+        <div id="loadLog" style="font-size: x-small;padding-top:20px;">
+        </div>
+    </div>
+
+    <div id="main" class="flex">
+        <h1>GAME INSTRUCTIONS</h1>
+        <ul>
+            <li> <h3> <b style="color:rgb(0, 255, 200)"> Turn Up Volume 🔊 </b> (Wear a headphone 🎧 if possible) for best experience. </h3></li>
+            <li>This Is Not Made For Kids &lt; 5 years. <br> </li>
+            <li style="color:salmon">NOTE: Make Sure You Dont Play It Much . You Will Be Addicted! 😂</li>
+        </ul>
+        <button id="start" style="margin:auto" onclick="initGame();">
+            START >>
+        </button>
+    </div>
+
+    <div id="GameArea">
+        <video src="./assets/Mountains.mp4" id="vid" loop='true'>
+        </video>
+        
+        <button id="skpIntro"  onclick="skipIntro();">
+            SKIP INTRO >>
+        </button>
+        <video src="./assets/crazy.mp4" alt="oops!" id="boo">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
