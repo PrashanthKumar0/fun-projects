@@ -127,7 +127,7 @@ function skipIntro(){
     }else{
         ar=h/w;
         
-        $('#boo').style.transform="translate(0%,-50%)";
+        $('#boo').style.transform="translate(0%,-25%)";
         $('#boo').style.width=(innerWidth)+"px";
         $('#boo').style.height=ar*(innerWidth)+"px";
     }
