@@ -146,6 +146,11 @@ h1:before{
     z-index: 10;
     width:100%;
 }
+
+video{
+    object-fit: cover;
+}
+
 #boo{
     display:none;
 }
