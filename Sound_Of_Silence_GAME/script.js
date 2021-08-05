@@ -123,11 +123,11 @@ function skipIntro(){
     if(w>=innerWidth && h>=innerHeight){
         $('#boo').style.height=h+"px";
         $('#boo').style.width=w+"px";
-        $('#boo').style.transform="translate(-50%,0%)";
+        //$('#boo').style.transform="translate(-50%,0%)";
     }else{
         ar=h/w;
         
-        $('#boo').style.transform="translate(0%,-25%)";
+        //$('#boo').style.transform="translate(0%,-25%)";
         $('#boo').style.width=(innerWidth)+"px";
         $('#boo').style.height=ar*(innerWidth)+"px";
     }
